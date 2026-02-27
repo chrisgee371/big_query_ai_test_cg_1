@@ -2,8 +2,8 @@
   config({
     "materialized": "table",
     "alias": "sales_report",
-    "database": "chris_demos",
-    "schema": "demos"
+    "database": "prophecy_field",
+    "schema": "chris_demos"
   })
 }}
 

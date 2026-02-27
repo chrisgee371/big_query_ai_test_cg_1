@@ -6,7 +6,7 @@
 
 WITH customers_source AS (
   SELECT *
-  FROM {{ source('chris_demos.demos', 'customers') }}
+  FROM {{ source('prophecy_field_chris_demos', 'customers') }}
 ),
 
 customers_filtered AS (

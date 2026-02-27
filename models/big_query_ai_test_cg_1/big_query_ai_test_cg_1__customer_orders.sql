@@ -11,7 +11,7 @@ WITH customers_filtered AS (
 
 orders_source AS (
   SELECT *
-  FROM {{ source('chris_demos.demos', 'orders') }}
+  FROM {{ source('prophecy_field_chris_demos', 'orders') }}
 ),
 
 orders_filtered AS (
