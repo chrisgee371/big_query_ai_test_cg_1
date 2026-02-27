@@ -45,7 +45,27 @@ sqlMacros:
     - macros/prophecy_tmp_source.sql
     - .prophecy/ide/macros/prophecy_tmp_source.json
     createdAt: '2026-02-27 09:37:21'
-sqlSeeds: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/regions:
+    name: regions
+    schema:
+      entityType: ''
+      providerType: BigQuery
+      fields:
+      - name: region_id
+        dataType:
+          type: Integer
+      - name: region_name
+        dataType:
+          type: String
+      - name: country
+        dataType:
+          type: String
+    description: null
+    author: gee.chris@prophecy.io
+    files:
+    - seeds/regions.csv
+    createdAt: '2026-02-27 10:28:18'
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline:
