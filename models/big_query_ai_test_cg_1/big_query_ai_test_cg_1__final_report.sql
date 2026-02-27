@@ -2,7 +2,7 @@
   config({
     "materialized": "table",
     "alias": "sales_report",
-    "database": "prophecy_field",
+    "database": "prophecy-field",
     "schema": "chris_demos"
   })
 }}
