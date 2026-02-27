@@ -1,0 +1,109 @@
+name: big_query_ai_test_cg_17
+description: ''
+version: 0.0.1
+author: gee.chris@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2026-02-27 09:36:36'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: gee.chris@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2026-02-27 09:36:41'
+  .prophecy/metadata/sqlmacros/prophecy_tmp_source:
+    name: prophecy_tmp_source
+    macroType: expression
+    description: null
+    author: gee.chris@prophecy.io
+    files:
+    - macros/prophecy_tmp_source.sql
+    - .prophecy/ide/macros/prophecy_tmp_source.json
+    createdAt: '2026-02-27 09:37:21'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/regions:
+    name: regions
+    schema:
+      entityType: ''
+      providerType: BigQuery
+      fields:
+      - name: region_id
+        dataType:
+          type: Integer
+      - name: region_name
+        dataType:
+          type: String
+      - name: country
+        dataType:
+          type: String
+    description: null
+    author: gee.chris@prophecy.io
+    files:
+    - seeds/regions.csv
+    createdAt: '2026-02-27 10:28:18'
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: gee.chris@prophecy.io
+  createdAt: '2026-02-27 09:36:36'
+dependencies: []
+projectDependencies:
+  '78064':
+    projectUID: 78064
+    projectName: prophecy_basics
+    repositoryPath: gitUri=https://github.com/prophecy-io/prophecy-basics&subPath=
+    version: 1.0.7
+    isDefault: true
+    author: null
+    createdAt: '2026-02-27 09:36:25'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}
+projectConfigurations: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/big_query_ai_test_cg_1:
+    name: big_query_ai_test_cg_1
+    schema: null
+    description: null
+    author: gee.chris@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/big_query_ai_test_cg_1.json
+    - pipelines/big_query_ai_test_cg_1.py
+    createdAt: '2026-02-27 09:37:21'
+sqlBusinessApps:
+  .prophecy/metadata/sqlbusinessapp/big_query_ai_test_cg_1_analysis:
+    name: big_query_ai_test_cg_1_analysis
+    schema: null
+    description: null
+    author: gee.chris@prophecy.io
+    files:
+    - apps/big_query_ai_test_cg_1_analysis.json
+    createdAt: '2026-02-27 09:37:21'
+    sqlOrchestrationPipelineName: big_query_ai_test_cg_1
