@@ -1,0 +1,56 @@
+version: 2  
+sources:  
+- name: "prophecy_field_chris_demos"  
+  database: "prophecy-field"  
+  schema: "chris_demos"  
+  tables:  
+  - name: "customers"  
+    description: "Customer master data with contact information and regional assignment."  
+    config:  
+      tags:  
+      - "pipeline:big_query_ai_test_cg_1"  
+    columns:  
+    - name: "customer_id"  
+      description: "Unique identifier for each customer."  
+      dataType:  
+        type: "String"  
+    - name: "customer_name"  
+      description: "Full name of the customer."  
+      dataType:  
+        type: "String"  
+    - name: "email"  
+      description: "Customer email address."  
+      dataType:  
+        type: "String"  
+    - name: "region_id"  
+      description: "Foreign key linking to regions data."  
+      dataType:  
+        type: "String"  
+    - name: "status"  
+      description: "Customer status (active/inactive)."  
+      dataType:  
+        type: "String"  
+    type: "table"  
+  - name: "orders"  
+    description: "Order transactions with customer and amount information."  
+    config:  
+      tags:  
+      - "pipeline:big_query_ai_test_cg_1"  
+    columns:  
+    - name: "order_id"  
+      description: "Unique identifier for each order."  
+      dataType:  
+        type: "String"  
+    - name: "customer_id"  
+      description: "Foreign key linking to customers."  
+      dataType:  
+        type: "String"  
+    - name: "order_amount"  
+      description: "Monetary value of the order."  
+      dataType:  
+        type: "Float"  
+    - name: "order_date"  
+      description: "Date the order was placed."  
+      dataType:  
+        type: "Date"  
+    type: "table"

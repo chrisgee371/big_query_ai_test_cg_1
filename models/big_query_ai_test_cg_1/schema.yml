@@ -18,3 +18,5 @@ models:
     tags:
       - "prophecy_temp"
   - name: "big_query_ai_test_cg_1__final_report"
+    tags:
+      - "prophecy_temp"
