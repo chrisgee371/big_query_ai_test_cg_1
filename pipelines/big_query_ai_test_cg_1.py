@@ -72,7 +72,7 @@ with Pipeline(args) as pipeline:
     # Aggregate: Summarize by region
     sales_analysis__sales_by_region = Process(
         name="big_query_ai_test_cg_1__sales_by_region",
-        properties=ModelTransform(modelName="sales_analysis__sales_by_region"),
+        properties=ModelTransform(modelName="big_query_ai_test_cg_1__sales_by_region"),
         input_ports=["in_0"],
         output_ports=["out_0"]
     )
