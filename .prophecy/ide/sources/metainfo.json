@@ -1,0 +1,31 @@
+{
+  "name" : "big_query_ai_test_cg_17",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "bigquery",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : {
+      "https://github.com/prophecy-io/prophecy-basics" : "78064"
+    },
+    "dependenciesMetadata" : {
+      "https://github.com/prophecy-io/prophecy-basics" : {
+        "autoUpgrade" : true
+      }
+    }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql",
+  "backEndLanguage" : "sql"
+}

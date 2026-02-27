@@ -1,0 +1,9 @@
+{
+  "id" : "big_query_ai_test_cg_1_analysis",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "big_query_ai_test_cg_1",
+    "parameterSet" : ""
+  },
+  "instances" : { }
+}
